@@ -3,6 +3,7 @@ import {
   Navbar,
   NavbarBrand,
   NavbarCollapse,
+  NavbarLink,
   NavbarToggle,
 } from "flowbite-react";
 import Link from "next/link";
@@ -16,24 +17,22 @@ export function Component() {
 
       <NavbarToggle />
       <NavbarCollapse>
-        <Link
-          className="text-white text-2xl hover:text-blue-300 transition duration-300"
-          href="/menu"
-        >
-          Menü
+        <Link href="/menu">
+          <NavbarLink className="text-white text-2xl hover:text-blue-300 transition duration-300">
+            Menü
+          </NavbarLink>
         </Link>
-        <Link
-          className="text-white text-2xl hover:text-blue-300 transition duration-300"
-          href="/contact"
-        >
-          Kapcsolat
+        <Link href="/contact">
+          <NavbarLink className="text-white text-2xl hover:text-blue-300 transition duration-300">
+            {" "}
+            Kapcsolat
+          </NavbarLink>
         </Link>
 
-        <Link
-          className="text-white text-2xl hover:text-blue-300 transition duration-300"
-          href="/about"
-        >
-          Rólunk
+        <Link href="/about">
+          <NavbarLink className="text-white text-2xl hover:text-blue-300 transition duration-300">
+            Rólunk
+          </NavbarLink>
         </Link>
       </NavbarCollapse>
     </Navbar>
