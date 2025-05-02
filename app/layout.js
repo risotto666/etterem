@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import { Component } from "./components/Navbar";
 import { FooterComponent } from "./components/Footer";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +26,19 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Bolyhos Étterem - Finom étkek, barátságos környezet."
+        />
+        <meta
+          name="keywords"
+          content="étterem, étkezés, rendelés, bolyhos, étlap"
+        />
+        <meta name="Roland Toth" content="Bolyhos Étterem" />
+        <title>Bolyhos Étterem</title>
+      </Head>
       <body
         className={`${geistSans.variable} ${poppins.className} ${geistMono.variable} antialiased`}
       >
