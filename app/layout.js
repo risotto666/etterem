@@ -46,11 +46,22 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${poppins.className} ${geistMono.variable} antialiased`}
       >
         <CartProvider>
-          <NavbarComponent />
-          {children}
-          <FloatingBasket />
-          <FooterComponent />
-          <Toaster />
+          <div className="flex flex-col min-h-screen">
+            {/* Navigációs sáv */}
+            <NavbarComponent />
+
+            {/* Fő tartalom */}
+            <main className="flex-grow">{children}</main>
+
+            {/* Úszó kosár */}
+            <FloatingBasket />
+
+            {/* Lábléc */}
+            <FooterComponent />
+
+            {/* Toast értesítések */}
+            <Toaster />
+          </div>
         </CartProvider>
       </body>
     </html>

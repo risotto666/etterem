@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export function FooterComponent() {
   return (
-    <Footer container>
+    <Footer className=" text-black py-4" container>
       <FooterCopyright href="/" by="Bolyhos Étterem™" year={2022} />
       <FooterLinkGroup>
         <div className="grid gap-2 md:flex mt-4">
