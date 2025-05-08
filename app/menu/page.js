@@ -1,15 +1,19 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useCart } from "../context/cart-context";
+import toast from "react-hot-toast";
 
 export default function Menu() {
+  const { addToCart } = useCart();
   const [foodData, setFoodData] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const [filter, setFilter] = useState("all"); // all | vegetarian | meat
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [quantity, setQuantity] = useState(1);
-
+  const { cartItems } = useCart();
+  console.log(cartItems);
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
@@ -108,18 +112,18 @@ export default function Menu() {
                 <div className="flex gap-2">
                   <button
                     onClick={() => {
-                      console.log(
-                        "Rendelve:",
-                        foodData[index],
-                        "Mennyiség:",
-                        quantity
-                      );
-                      setSelectedIndex(null); // visszazár
+                      // Debug üzenet a console-ba
+
+                      console.log(cartItems);
+                      addToCart({ ...item, quantity });
+                      toast.success("Rendelés hozzáadva a kosárhoz");
+                      setSelectedIndex(null); // visszazárás
                     }}
                     className="bg-green-500 hover:bg-green-700 text-white py-1 px-3 rounded"
                   >
                     Megrendelem
                   </button>
+
                   <button
                     onClick={() => setSelectedIndex(null)}
                     className="bg-gray-400 hover:bg-gray-600 text-white py-1 px-3 rounded"

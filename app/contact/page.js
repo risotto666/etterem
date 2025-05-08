@@ -20,7 +20,7 @@ export default function Contact() {
           <p>
             <strong>Cím:</strong>
             <br />
-            3100 Salgótarján, Fáy András Körút 39.
+            3051 Szarvasgede, Kossuth út 42.
             <br />
             <strong>Telefon:</strong>{" "}
             <span className="text-black font-semibold">06-20-212-6622</span>
@@ -38,11 +38,11 @@ export default function Contact() {
           {/* Google térkép */}
           <div className="w-full h-64">
             <iframe
-              title="Térkép"
-              className="w-full h-full rounded"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2734.833043881619!2d19.793267!3d48.100572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4740a0ed9a0db19f%3A0xa7de44d2279b9f48!2sF%C3%A1y%20Andr%C3%A1s%20k%C3%B6rut%2039%2C%203100%20Salg%C3%B3tarj%C3%A1n!5e0!3m2!1shu!2shu!4v1714589678543"
-              allowFullScreen=""
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2678.803132080794!2d19.640190376601357!3d47.82403247121055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4740487571ccb2e9%3A0x57ffb72c1de53cb!2sSzarvasgede%2C%20Kossuth%20%C3%BAt%2042%2C%203051%20Hungary!5e0!3m2!1sen!2suk!4v1746711358459!5m2!1sen!2suk"
+              className="w-full h-full"
+              allowfullscreen="yes"
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>

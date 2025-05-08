@@ -1,8 +1,11 @@
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
-import { Component } from "./components/Navbar";
+import { NavbarComponent } from "./components/Navbar";
 import { FooterComponent } from "./components/Footer";
 import Head from "next/head";
+import { CartProvider } from "./context/cart-context";
+import FloatingBasket from "./components/FloatingBasket";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,10 +45,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${poppins.className} ${geistMono.variable} antialiased`}
       >
-        <Component />
-        {children}
-
-        <FooterComponent />
+        <CartProvider>
+          <NavbarComponent />
+          {children}
+          <FloatingBasket />
+          <FooterComponent />
+          <Toaster />
+        </CartProvider>
       </body>
     </html>
   );

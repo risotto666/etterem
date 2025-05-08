@@ -3,6 +3,7 @@ import CarouselComponent from "./components/Carousel";
 import DiscountSection from "./components/DiscountSection";
 import EatInOrTakeAway from "./components/EatInOrTakeAway";
 import FeaturedDishes from "./components/FeaturedDishes";
+
 import FloatingOrderButton from "./components/FloatingOrderButton";
 
 import Hero from "./components/Hero";
@@ -21,6 +22,7 @@ export default function Home() {
       <DiscountSection />
       <FeaturedDishes />
       <CarouselComponent />
+
       <FloatingOrderButton />
     </>
   );

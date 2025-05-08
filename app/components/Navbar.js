@@ -8,31 +8,34 @@ import {
 } from "flowbite-react";
 import Link from "next/link";
 
-export function Component() {
+export function NavbarComponent() {
   return (
     <Navbar className="bg-[#08312f] text-white" fluid>
-      <NavbarBrand href="/">
-        <img src="/logo2.png" className=" mr-3rounded-xl h-24" alt="Logo" />{" "}
-      </NavbarBrand>
+      <Link href="/">
+        <img src="/logo2.png" className="mr-3 rounded-xl h-24" alt="Logo" />{" "}
+      </Link>
 
       <NavbarToggle />
       <NavbarCollapse>
-        <Link href="/menu">
-          <NavbarLink className="text-white text-2xl hover:text-blue-300 transition duration-300">
-            Menü
-          </NavbarLink>
-        </Link>
-        <Link href="/contact">
-          <NavbarLink className="text-white text-2xl hover:text-blue-300 transition duration-300">
-            {" "}
-            Kapcsolat
-          </NavbarLink>
+        <Link
+          href="/menu"
+          className="text-white text-2xl hover:text-blue-300 transition duration-300"
+        >
+          Menü
         </Link>
 
-        <Link href="/about">
-          <NavbarLink className="text-white text-2xl hover:text-blue-300 transition duration-300">
-            Rólunk
-          </NavbarLink>
+        <Link
+          href="/contact"
+          className="text-white text-2xl hover:text-blue-300 transition duration-300"
+        >
+          Kapcsolat
+        </Link>
+
+        <Link
+          href="/about"
+          className="text-white text-2xl hover:text-blue-300 transition duration-300"
+        >
+          Rólunk
         </Link>
       </NavbarCollapse>
     </Navbar>

@@ -2,6 +2,7 @@
 export async function GET() {
   const foodData = [
     {
+      id: 1,
       name: "Spaghetti Carbonara",
       ingredients: [
         "spaghetti",
@@ -15,6 +16,7 @@ export async function GET() {
       vegetarian: false,
     },
     {
+      id: 2,
       name: "Margherita Pizza",
       ingredients: [
         "pizza tészta",
@@ -27,6 +29,7 @@ export async function GET() {
       vegetarian: true,
     },
     {
+      id: 3,
       name: "Húsleves",
       ingredients: ["marhahús", "zöldségek", "hagymák", "fűszerek"],
       image: "/foods/husleves.webp",
@@ -34,6 +37,7 @@ export async function GET() {
       vegetarian: false,
     },
     {
+      id: 4,
       name: "Töltött Káposzta",
       ingredients: ["savanyú káposzta", "darálthús", "rizs", "fűszerek"],
       image: "/foods/kaposzta.jpg",
@@ -41,6 +45,7 @@ export async function GET() {
       vegetarian: false,
     },
     {
+      id: 5,
       name: "Lasagne",
       ingredients: [
         "lasagne tészta",
@@ -54,6 +59,7 @@ export async function GET() {
       vegetarian: false,
     },
     {
+      id: 6,
       name: "Sült Csirke",
       ingredients: ["csirke", "burgonya", "fűszerek", "olívaolaj"],
       image: "/foods/csirke.jpg",
@@ -61,6 +67,7 @@ export async function GET() {
       vegetarian: false,
     },
     {
+      id: 7,
       name: "Vegetáriánus Burrito",
       ingredients: ["tortilla", "rizs", "bab", "zöldségek", "avokádó"],
       image: "/foods/vegetable-burrito.webp",
@@ -68,6 +75,7 @@ export async function GET() {
       vegetarian: true,
     },
     {
+      id: 8,
       name: "Gulyásleves",
       ingredients: [
         "marhahús",
@@ -81,6 +89,7 @@ export async function GET() {
       vegetarian: false,
     },
     {
+      id: 9,
       name: "Rántott Hal",
       ingredients: ["hal filé", "tojás", "zsemlemorzsa", "fűszerek", "citrom"],
       image: "/foods/hal.jpg",
@@ -88,6 +97,7 @@ export async function GET() {
       vegetarian: false,
     },
     {
+      id: 10,
       name: "Tzatziki",
       ingredients: ["joghurt", "uborka", "fokhagyma", "olívaolaj", "fűszerek"],
       image: "/foods/tzatziki.jpg",
@@ -95,6 +105,7 @@ export async function GET() {
       vegetarian: true,
     },
     {
+      id: 11,
       name: "Chili con Carne",
       ingredients: ["darálthús", "bab", "paradicsom", "fűszerek", "chili"],
       image: "/foods/chilli.jpg",
@@ -102,6 +113,7 @@ export async function GET() {
       vegetarian: false,
     },
     {
+      id: 12,
       name: "Pulykamell Sült Zöldségekkel",
       ingredients: ["pulykamell", "burgonya", "répa", "brokkoli", "fűszerek"],
       image: "/foods/pulyka.jpg",
@@ -109,6 +121,7 @@ export async function GET() {
       vegetarian: false,
     },
     {
+      id: 13,
       name: "Frittata",
       ingredients: ["tojás", "zöldségek", "sajt", "fűszerek"],
       image: "/foods/frittata.jpeg",
@@ -116,6 +129,7 @@ export async function GET() {
       vegetarian: true,
     },
     {
+      id: 14,
       name: "Pasta Pesto",
       ingredients: [
         "spaghetti",
@@ -128,6 +142,7 @@ export async function GET() {
       vegetarian: true,
     },
     {
+      id: 15,
       name: "Pad Thai",
       ingredients: [
         "rizstészta",
@@ -141,6 +156,7 @@ export async function GET() {
       vegetarian: false,
     },
     {
+      id: 16,
       name: "Kürtőskalács",
       ingredients: ["liszt", "cukor", "élesztő", "vaj", "fűszerek"],
       image: "/foods/kalacs.webp",
@@ -148,6 +164,7 @@ export async function GET() {
       vegetarian: true,
     },
     {
+      id: 17,
       name: "Pancakes",
       ingredients: ["liszt", "tojás", "tej", "cukor", "szirup"],
       image: "/foods/palacsinta.jpg",
@@ -155,6 +172,7 @@ export async function GET() {
       vegetarian: true,
     },
     {
+      id: 18,
       name: "Saláta Caesar",
       ingredients: [
         "saláta",
